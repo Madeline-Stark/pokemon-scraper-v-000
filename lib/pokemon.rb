@@ -23,7 +23,7 @@ class Pokemon
  def self.find(id, db)
    if self.all.find {|x| x.id == id}
      x
-   end 
+   end
  end
 
 end
