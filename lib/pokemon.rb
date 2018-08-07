@@ -20,6 +20,7 @@ class Pokemon
    found = db.execute("SELECT * FROM pokemon WHERE id = ?", id)
    lost = []
    lost = found.flatten
+   binding.pry
    Pokemon.new(lost[0], lost[1], lost[2], db)
  end
  # what we are going want to do is create a sql query by id and
