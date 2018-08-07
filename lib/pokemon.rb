@@ -19,7 +19,7 @@ class Pokemon
  def self.find(id, db)
    found = db.execute("SELECT * FROM pokemon WHERE id = ?", id)
    found.flatten!
-   initialize(found[0], found[1], found[2], db)
+   Pokemon.new(found[0], found[1], found[2], db)
  end
  # what we are going want to do is create a sql query by id and
  # store that array that we get as a result of the query into a variable
