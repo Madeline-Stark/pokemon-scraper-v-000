@@ -8,12 +8,6 @@ class Pokemon
     @name = name
     @type = type
     @db = db
-    @@all << self
-  end
-
-
-  def self.all
-    @@all
   end
 
  def self.save(name, type, db)
@@ -21,9 +15,9 @@ class Pokemon
  end
 
  def self.find(id, db)
-   if self.all.detect {|x| x.id == id}
-     self
-   end
+
  end
+ # what we are going want to do is create a sql query by id and
+ # store that array that we get as a result of the query into a variable
 
 end
