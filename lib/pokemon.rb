@@ -21,7 +21,7 @@ class Pokemon
  end
 
  def self.find(id, db)
-   if db.find {|x| x.id == id}
+   if self.all.find {|x| x.id == id}
      x
    end 
  end
