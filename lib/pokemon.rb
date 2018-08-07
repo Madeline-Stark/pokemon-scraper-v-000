@@ -15,7 +15,7 @@ class Pokemon
  end
 
  def self.find(idee, db)
-   found = "SELECT * FROM DB WHERE id = idee";
+   found = "SELECT * FROM db WHERE id = idee";
    found
 
  end
