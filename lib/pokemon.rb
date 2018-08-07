@@ -15,9 +15,7 @@ class Pokemon
  end
 
  def self.find(idee, db)
-   found = "SELECT * FROM db WHERE id = idee";
-   found
-
+   db.execute("SELECT * FROM pokemon WHERE id = ?", id)
  end
  # what we are going want to do is create a sql query by id and
  # store that array that we get as a result of the query into a variable
