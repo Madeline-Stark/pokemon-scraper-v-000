@@ -21,7 +21,7 @@ class Pokemon
    lost = []
    lost = found.flatten
    binding.pry
-   Pokemon.new(lost[0], lost[1], lost[2], db)
+   Pokemon.new(id: lost[0], name: lost[1], type: lost[2], db: db) #need to be key value pairs 
  end
  # what we are going want to do is create a sql query by id and
  # store that array that we get as a result of the query into a variable
